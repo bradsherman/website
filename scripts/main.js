@@ -20,6 +20,7 @@ $(document).ready(function() {
 
 		});
 
+		// Following function from Chris Coyier (https://css-tricks.com/snippets/jquery/smooth-scrolling/) 
 		$(function() {
  			$('a[href*="#"]:not([href="#"])').click(function() {
     		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -34,6 +35,7 @@ $(document).ready(function() {
    			}
  		 });
 		});
+		// Following function from Cory Jbara (https://github.com/cjbara) 
 		//This function makes the greyed out logos fade when hovered over
        $('.connect-button').hover(
        function(){ 
