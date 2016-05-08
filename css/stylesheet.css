@@ -1,0 +1,205 @@
+/*body {
+	padding-top: 50px;
+}(*/
+
+img {
+	display: block;
+	position: relative;
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	position: relative;
+	width: 100%;
+	height:auto;
+}
+
+p {
+	font-size: 20px;
+}
+
+.dl-horizontal {
+	font-size: 20px;
+	text-align: left;
+}
+
+li {
+	font-size: 20px;
+}
+
+.container {
+	padding-top: 60px;
+}
+
+.header {
+	height:100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+}
+
+#intro {
+	background: url(../pics/background.jpg) no-repeat center center fixed; 
+}
+
+.gray {
+	background-color: rgb(245, 245, 245);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald';
+}
+
+h1 {
+	font-size: 72px;
+}
+
+h3 {
+	font-size: 42px;
+}
+
+p, div {
+    font-family: 'Lato';
+}
+
+.head-text {
+	font-family: 'Oswald', arial, sans-serif;
+	font-weight:bold;
+	font-size: 30px;
+	color:#ffffff;
+	width:70%;
+	text-align: center;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+/*
+#head-container {
+	padding-top:15%;
+	overflow: visible;
+}
+*/
+.page-link {
+	padding-top:50px; 
+	padding-bottom: 50px;
+}
+
+.head-text * {
+	vertical-align: middle;
+}
+
+#about-me-pic {
+	padding-bottom: 30px;
+}
+
+.skills span {
+	font-weight: bold;
+}
+
+.skills {
+	text-align: left;
+}
+
+.green {
+	background-color: rgb(215, 255, 215);
+}
+
+.blue {
+	background-color: rgb(215, 215, 255);
+}
+
+#contact {
+	height:400px;
+	background: url(../pics/background.jpg) no-repeat center center fixed; 
+	color:white;
+	text-align:center;
+}
+
+.contactme h3{
+	padding-top:5%;
+}
+
+.contactme p {
+	margin-left: 10px;
+}
+
+
+.text-centered {
+	text-align: center;
+}
+
+.btn-nav {
+  width: 200px;
+  height: 50px;
+}
+
+.connect-button {
+	display: inline-block;
+	margin: 10px;
+	height: 75px;
+	width: 75px;
+	border-radius: 5px;
+	vertical-align: top;
+	border: 1px solid #e3e3e3;
+	-webkit-filter: grayscale(100%);
+}
+
+.glyphicon-envelope	{
+	font-size: 55px;
+	padding-top: 13.33%;
+	color: white;
+}
+
+#twitter {
+	background-color: #55acee;
+}
+
+#facebook {
+	background-color: #3B5998;
+}
+
+#linkedin {
+	background-color: #0077b5;
+}
+
+#mail {
+	background-color: #147efb;
+}
+
+#github {
+	background-color: #00cc66;
+}
+
+#github.connect-button {
+	padding:5px;
+	padding-top:7px;
+}
+
+#github a img {
+	height:60px;
+}
+
+#copyright {
+	margin-top:100px;
+}
+
+.text {
+	display: inline-block;
+	margin: 10px auto 10px auto;
+	width: 470px;
+	border-radius:5px;
+	display: none;
+}
+
+
+.text p {
+	color: white;
+	font-weight: bold;
+	margin:5px;
+	padding:5px;
+}
