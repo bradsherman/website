@@ -36,18 +36,14 @@
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid gray">
 			<div class="navbar-header">
-      	<a class="navbar-brand to-intro" href="#">Brad Sherman</a>
+      	<a class="navbar-brand to-intro" href="#intro">Brad Sherman</a>
 			</div>
-			<div class="collapse navbar-collapse">
+			<div class="collapse navbar-collapse nav-elements">
 				<ul class="nav navbar-nav">
-					<li class="dropdown">
-					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Me <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#about-me" class="to-about">About Me</a></li>
-							<li><a href="#skills" class="to-skills">Skills</a></li>
-							<li><a href="#extracurriculars" class="to-extras">Extracurriculars</a></li>
-						</ul>
-					</li>
+					<li><a href="#about-me" class="to-about">About Me</a></li>
+					<li><a href="#skills" class="to-skills">Skills</a></li>
+					<li><a href="#extracurriculars" class="to-extras">Extracurriculars</a></li>
+					<li><a href="#contact" class="to-contact">Contact Me</a></li>
 				</ul>
 		</div>
 	</nav>
@@ -57,138 +53,114 @@
 			<div class="head-text">
 				<h1>BRAD SHERMAN</h1>
 				<h3>University of Notre Dame '18</h3>
-				  <a href="#about-me" class="btn btn-default btn-lg btn-nav to-about"><em>About Me</em></a><!--&#xf063 </a>-->
 			</div>
 		</div>
 	</header>
 	
-	<header id="about-me" class="header blue">
-	<div id="head-container" class="container">
+	<div id="about-me" class="blue">
+	<div class="container">
 		<div class="row page-link">
-			<a href="#intro" type="button" class="btn btn-default btn-lg btn-nav to-intro"><em>Introduction</em></a><!-- &#xf062 </a>-->
+				<h3 class="text-center">Hi! I'm Brad</h3>
 		</div>
 		<div class="row page-link">
-			<div class="col-sm-4 about-me-text">
+			<div class="col-md-4 about-me-text">
 				<p class="text-center">I am a member of the class of 2018 at <a href="http://nd.edu">Notre Dame</a> majoring in <a href="http://cse.nd.edu">Computer Science</a>. I am from Ida, a small town in southeastern Michigan. I came to Notre Dame as a chemical engineer, but started coding in the second semester of my freshman year, switched to computer science, and never looked back. I am always trying to learn more about programming and computers in general. I am especially interested in networking and cyber security. I believe that now more than ever we need to focus on security because soon the "Internet of Things" will surround us, and we must make sure that any item that has a computer in it is secure.</p>
 			</div>
-			<div class="col-sm-4">
-				<h3 class="text-center">Hi! I'm Brad</h3>
+			<div class="col-md-4">
 				<img class="image" id="about-me-pic" src="./pics/bradsherman.jpg">
 			</div>
-			<div class="col-sm-4 about-me-text">
+			<div class="col-md-4 about-me-text">
 				<p class="text-center">Outside the classroom, I enjoy playing sports. I played basketball and baseball in high school, so I try to play those as much as I can. I also love throwing a football around, or trying out new sports like volleyball or soccer. I'm a Detroit sports fan, and I enjoy watching the Tigers, Lions, Red Wings, and Pistons when I have time. When I'm not playing sports or doing schoolwork, I enjoy watching movies and playing video games with my friends. I am also interested in working on side projects, but since I'm relatively new to computer science, I am learning as much as I can in order to sharpen my skills. </p>	
 			</div>
 		</div>
-		<div class="row page-link">
-			<a href="#skills" type="button" class="btn btn-default btn-lg btn-nav to-skills"><em>Skills</em></a><!-- &#xf063 </a>-->
-		</div>
 	</div>
-	</header>
+	</div>
 
-	<header id="skills" class="header green">
-		<div id="head-container" class="container">
-			<div class="row page-link">
-				<a href="#about-me" type="button" class="btn btn-default btn-lg btn-nav to-about"><em>About Me</em><!--&#xf062 --></a>
-			</div>
+	<div id="skills" class="green">
+		<div class="container">
 			<div class="row">
 				<h3 class="text-center">Skills</h3>
 			</div>
 				<div class="row page-link">
-					<div class="col-sm-2">
+					<div class="col-md-2">
 					</div>
-					<div class="col-sm-10 skills">
-						<p>Listed below are skills that I have gained through classwork and projects in school:</p>
-						<dl class="dl-horizontal">
-							<dt>C: </dt>
+					<div class="col-md-10 skills">
+						<p><u>Listed below are skills that I have gained through classwork and projects in school:</u></p>
+						<dl>
+							<dt>C</dt>
 							<dd>I took Fundamentals of Computing 1 in the fall of 2015, where I learned how to use the C programming language, which I used to make Donkey Kong.</dd>
-							<dt>C++: </dt>
+							<dt>C++</dt>
 							<dd>I learned C++ by taking Fundamentals of Computing 2 in the spring of 2016. I learned how to deal with STL containers such as vectors, sets, and maps, as well as how to use inheritance and composition to my benefit. I used C++ to write the Stock Trading Algorithm program.</dd>
-							<dt>Unix: </dt>
+							<dt>Unix</dt>
 							<dd>I am proficient in a unix command line from Basic Unix for Engineers, so much so that I decided to use Ubuntu as my primary OS on my personal laptop.</dd>
-							<dt>Python: </dt>
+							<dt>Python</dt>
 							<dd>When I took Basic Unix for Engineers in the spring of 2016, I learned how to use python to make system calls to read and write files, fork multiple processes at a time, and set up a simple server-client interaction, among other topics.</dd>
+							<dt>HTML/CSS/Bootstrap/jQuery</dt>
+							<dd>I gained a lot of experience using these components while constructing this website.</dd>
 						</dl>
-		<!--				<ul>
-							<li><span>C:</span> I took Fundamentals of Computing 1 in the fall of 2015, where I learned how to use the C programming language, which I used to make Donkey Kong.</li>
-							<li><span>C++:</span> I learned C++ by taking Fundamentals of Computing 2 in the spring of 2016. I learned how to deal with STL containers such as vectors, sets, and maps, as well as how to use inheritance and composition to my benefit. I used C++ to write the Stock Trading Algorithm program.</li>
-							<li><span>Unix:</span> I am proficient in a unix command line from Basic Unix for Engineers, so much so that I decided to use Ubuntu as my primary OS on my personal laptop.</li>
-							<li><span>Python:</span> When I took Basic Unix for Engineers in the spring of 2016, I learned how to use python to make system calls to read and write files, fork multiple processes at a time, and set up a simple server-client interaction, among other topics.</li>
-						</ul>-->
-						
-				<!--		<dl class="dl-horizontal">
-							<dt>Test: </dt>
-							<dd>test description </dd>
-						</dl>-->
 					</div>
 				</div>
-			<div class="row page-link">
-				<a href="#extracurriculars" type="button" class="btn btn-default btn-lg btn-nav to-extras"><em>Extracurriculars</em><!-- &#xf063--> </a>
-			</div>
-		</div>
-	</header>
-
-	<header id="extracurriculars" class="header blue">
-	<div id="head-container" class="container">
-		<div class="row page-link">
-			<a href="#skills" type="button" class="btn btn-default btn-lg btn-nav to-skills"><em>Skills</em><!--&#xf062 --></a>
-		</div>
-		<div class="row page-link">
-			<h3 class="text-center">Extracurricular Activities</h3>
-		</div>
-		<div class="row page-link">
-			<a href="#contact" type="button" class="btn btn-default btn-lg btn-nav to-contact"><em>Contact</em><!-- &#xf063--> </a>
 		</div>
 	</div>
-	</header>
 
-
-	<footer id="contact">
-		<div class="container">
-			<div class="row">
-				<a href="#intro" type="button" class="btn btn-default btn-lg btn-nav to-intro"><em>Introduction</em></a><!-- &#xf062 </a>-->
-			</div>
-			<div class="row">
-				<div class="foot-text text-centered">
-					<h2>Contact Me:</h2>
+	<div id="extracurriculars" class="blue">
+			<div class="container">
+				<div class="row">
+					<h3 class="text-center">Extracurricular Activities</h3>
+				</div>
+				<div class="row page-link">
+					<div class="col-md-2 pic-container">
+						<img class="extras-pic" id="tux" src="./pics/tux.png">
+						<img class="extras-pic" id="rpi" src="./pics/rpi.jpg">
+					</div>
+					<div class="col-md-4">
+						<p>When I started programming at the beginning of my sophomore year at Notre Dame, we did all of our projects on clusters that ran Redhat Linux. I had never heard of linux before, so I did some research on it, and by the time I came back for my second semester, I had dual booted my computer with Windows and Ubuntu. Ever since, 90% of the time I am on my computer, I use Ubuntu. I like to spend time learning about many things like window managers, raspberry pi's, and other things related to Linux operating systems. From this interest, I joined the Linux user group at Notre Dame, or ND Lug. We are a brand new club, but some of our topics have included text editors, window managers (which caused me to start using the i3wm), and raspberry pi projects.</p> 
+					</div>
+					<div class="col-md-2 pic-container">
+						<img class="extras-pic" id="theboys" src="./pics/theboys.jpg">
+						<img class="extras-pic" id="baseball" src="./pics/baseball.jpg">
+					</div>
+					<div class="col-md-4">
+						<p>One of the things I am most passionate about is sports. As I said before I played baseball and basketball in high school, but I enjoy many other sports like football and hockey as well. I play intramural baseball and basketball. Our team won the intramural championship this past year for baseball. i also played in the Bookstore Basketball tournament at Notre Dame in the spring of 2016. Bookstore basketball is the world's largest outdoor 5 on 5 basketball tournament. Our team finished second out of around 600 teams.</p>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="connect-button" id="mail">
+	</div>
+
+
+		<div class="container-fluid gray" id="contact">
+			<div class="row page-link">
+			<ul>
+				<li class="connect-btn" id="mail">
 					<a href="mailto:bsherma1@nd.edu">
 						<span class="glyphicon glyphicon-envelope"></span>
 					</a>
-				</div>
-				<div class="connect-button" id="github">
+				</li>
+				<li class="connect-btn" id="github">
 					<a href="https://github.com/bradsherman" target="_blank">
 						<img src="./pics/github.png">
 					</a>
-				</div>
-				<div class="connect-button" id="linkedin">
+				</li>
+				<li class="connect-btn" id="linkedin">
 					<a href="https://www.linkedin.com/in/brad-sherman-861452115?trk=nav_responsive_tab_profile" target="_blank">
 						<img src="./pics/linkedin.png">
 					</a>
-				</div>
-				<div class="connect-button" id="twitter">
+				</li>
+				<li class="connect-btn" id="twitter">
 					<a href="https://twitter.com/BradSherman10" target="_blank">
 						<img src="./pics/twitter.png">
 					</a>
-				</div>
-				<div class="connect-button" id="facebook">
+				</li>
+				<li class="connect-btn" id="facebook">
 					<a href="https://www.facebook.com/Sherman.10" target="_blank">
 						<img src="./pics/facebook.png">
 					</a>
-				</div>
-				<div class="well well-sm text" id="mail"><p>Email Me: bsherma1@nd.edu</p></div>
-				<div class="well well-sm text" id="facebook"><p>Visit Me On Facebook</p></div>
-				<div class="well well-sm text" id="twitter"><p>Follow Me On Twitter</p></div>
-				<div class="well well-sm text" id="linkedin"><p>Connect With Me On LinkedIn</p></div>
-				<div class="well well-sm text" id="github"><p>Check Out My GitHub Profile</p></div>
+				</li>
+			</ul>
 			</div>
 			<div class="row">
-				<h5 id="copyright" class="text-centered">&copy Brad Sherman</h5>
-			</div>
-		</div>
-	</footer>
+      	<p>&copy 2016 Brad Sherman</p>
+      </div>
+     </div>
 </body>
-
 <html>

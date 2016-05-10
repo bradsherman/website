@@ -20,59 +20,55 @@ $(document).ready(function() {
 
 		});
 
-		// Following function from Chris Coyier (https://css-tricks.com/snippets/jquery/smooth-scrolling/) 
 		$(function() {
- 			$('a[href*="#"]:not([href="#"])').click(function() {
-    		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      	var target = $(this.hash);
-      	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-  	    if (target.length) {
-    	    $('html, body').animate({
-          	scrollTop: target.offset().top
-        	}, 1000);
-        	return false;
-      	}
+			$('a[href*="#"]:not([href="#"])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
    			}
- 		 });
+			});
 		});
-		// Following function from Cory Jbara (https://github.com/cjbara) 
 		//This function makes the greyed out logos fade when hovered over
-       $('.connect-button').hover(
-       function(){ 
-                     $(this).css({
-                            '-webkit-filter': 'grayscale(0%)',
-                            //'height': '95px'
-                     });
+		$('.connect-btn').hover(
+			function(){ 
+				$(this).css({
+					'-webkit-filter': 'grayscale(0%)',
+				});
 
-                     var id = $(this).attr('id');
-                     console.log('#'+id+'.text');
+				var id = $(this).attr('id');
+				console.log('#'+id+'.text');
 
-                     $('#'+id+'.text').css({
-                            'display': 'block'
-                     });
+				$('#'+id+'.text').css({
+					'display': 'block'
+				});
 
-                     //for the copyright
-                     $('#copyright').css({
-                            'margin-top': '12px'
-                     });
-              }, function(){ 
-                     $(this).css({
-                            '-webkit-filter': 'grayscale(100%)',
-                            //'height': '75px'
-                     });
+				//for the copyright
+				$('#copyright').css({
+					'margin-top': '12px'
+				});
+			}, function(){ 
+				$(this).css({
+					'-webkit-filter': 'grayscale(100%)',
+				});
 
-                     var id = $(this).attr('id');
-                     console.log('#'+id+'.text');
+				var id = $(this).attr('id');
+				console.log('#'+id+'.text');
 
-                     $('#'+id+'.text').css({
-                            'display': 'none'
-                     });
+				$('#'+id+'.text').css({
+					'display': 'none'
+				});
 
-                     //for the copyright
-                     $('#copyright').css({
-                            'margin-top': '100px'
-                     });
-              }
-       );
+				//for the copyright
+				$('#copyright').css({
+					'margin-top': '100px'
+				});
+			}
+		);
 
 });

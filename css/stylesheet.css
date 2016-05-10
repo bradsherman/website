@@ -1,15 +1,17 @@
-/*body {
-	padding-top: 50px;
-}(*/
-
 img {
-	display: block;
 	position: relative;
 	max-width: 100%;
 	max-height: 100%;
 	display: block;
-	position: relative;
 	width: 100%;
+	height:auto;
+}
+
+.extras-pic {
+	position: relative;
+	max-width: 85%;
+	max-height: 85%;
+	width: auto;
 	height:auto;
 }
 
@@ -17,17 +19,21 @@ p {
 	font-size: 20px;
 }
 
-.dl-horizontal {
+dl {
 	font-size: 20px;
 	text-align: left;
 }
+.nav-elements {
+	font-size: 15px;
+}
 
-li {
+.navbar-brand {
 	font-size: 20px;
 }
 
 .container {
-	padding-top: 60px;
+	padding-top: 40px;
+	width: 90%;
 }
 
 .header {
@@ -41,6 +47,7 @@ li {
 
 #intro {
 	background: url(../pics/background.jpg) no-repeat center center fixed; 
+	opacity: .75;
 }
 
 .gray {
@@ -67,7 +74,7 @@ p, div {
 	font-family: 'Oswald', arial, sans-serif;
 	font-weight:bold;
 	font-size: 30px;
-	color:#ffffff;
+	color: rgb(255,255,255);
 	width:70%;
 	text-align: center;
 	margin: auto;
@@ -78,15 +85,10 @@ p, div {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
-/*
-#head-container {
-	padding-top:15%;
-	overflow: visible;
-}
-*/
+
 .page-link {
-	padding-top:50px; 
-	padding-bottom: 50px;
+	padding-top:25px; 
+	padding-bottom:25px;
 }
 
 .head-text * {
@@ -96,11 +98,7 @@ p, div {
 #about-me-pic {
 	padding-bottom: 30px;
 }
-
-.skills span {
-	font-weight: bold;
-}
-
+	
 .skills {
 	text-align: left;
 }
@@ -113,11 +111,8 @@ p, div {
 	background-color: rgb(215, 215, 255);
 }
 
-/* following properties used from Cory Jbara (https://github.com/cjbara) */
 #contact {
-	height:400px;
-	background: url(../pics/background.jpg) no-repeat center center fixed; 
-	color:white;
+	height:200px;
 	text-align:center;
 }
 
@@ -125,34 +120,20 @@ p, div {
 	padding-top:5%;
 }
 
-.contactme p {
-	margin-left: 10px;
-}
-
-
-.text-centered {
-	text-align: center;
-}
-
-.btn-nav {
-  width: 200px;
-  height: 50px;
-}
-
-.connect-button {
+.connect-btn {
 	display: inline-block;
-	margin: 10px;
-	height: 75px;
-	width: 75px;
-	border-radius: 5px;
+	margin: 5px;
+	height: 50px;
+	width: 50px;
+	border-radius: 500px;
 	vertical-align: top;
 	border: 1px solid #e3e3e3;
 	-webkit-filter: grayscale(100%);
 }
 
 .glyphicon-envelope	{
-	font-size: 55px;
-	padding-top: 13.33%;
+	font-size: 35px;
+	padding-top:10%;
 	color: white;
 }
 
@@ -176,31 +157,3 @@ p, div {
 	background-color: #00cc66;
 }
 
-#github.connect-button {
-	padding:5px;
-	padding-top:7px;
-}
-
-#github a img {
-	height:60px;
-}
-
-#copyright {
-	margin-top:100px;
-}
-
-.text {
-	display: inline-block;
-	margin: 10px auto 10px auto;
-	width: 470px;
-	border-radius:5px;
-	display: none;
-}
-
-
-.text p {
-	color: white;
-	font-weight: bold;
-	margin:5px;
-	padding:5px;
-}
