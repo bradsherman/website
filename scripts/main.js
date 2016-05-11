@@ -71,4 +71,12 @@ $(document).ready(function() {
 			}
 		);
 
+		//Switch between thor and spidey picture
+		$('#unix').click(function() {
+			var _this = $(this);
+			var current = _this.attr('src');
+			var swap = _this.attr('swap');
+			_this.attr('src',swap).attr('swap',current);
+		});
+
 });

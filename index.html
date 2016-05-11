@@ -41,9 +41,10 @@
 			<div class="collapse navbar-collapse nav-elements">
 				<ul class="nav navbar-nav">
 					<li><a href="#about-me" class="to-about">About Me</a></li>
-					<li><a href="#skills" class="to-skills">Skills</a></li>
 					<li><a href="#extracurriculars" class="to-extras">Extracurriculars</a></li>
-					<li><a href="#contact" class="to-contact">Contact Me</a></li>
+					<li><a href="#skills" class="to-skills">Skills</a></li>
+					<li><a href="#projects" class="to-projects">Projects</a></li>
+					<li><a href="./Resume.pdf">Resume</a></li>
 				</ul>
 		</div>
 	</nav>
@@ -76,34 +77,7 @@
 	</div>
 	</div>
 
-	<div id="skills" class="green">
-		<div class="container">
-			<div class="row">
-				<h3 class="text-center">Skills</h3>
-			</div>
-				<div class="row page-link">
-					<div class="col-md-2">
-					</div>
-					<div class="col-md-10 skills">
-						<p><u>Listed below are skills that I have gained through classwork and projects in school:</u></p>
-						<dl>
-							<dt>C</dt>
-							<dd>I took Fundamentals of Computing 1 in the fall of 2015, where I learned how to use the C programming language, which I used to make Donkey Kong.</dd>
-							<dt>C++</dt>
-							<dd>I learned C++ by taking Fundamentals of Computing 2 in the spring of 2016. I learned how to deal with STL containers such as vectors, sets, and maps, as well as how to use inheritance and composition to my benefit. I used C++ to write the Stock Trading Algorithm program.</dd>
-							<dt>Unix</dt>
-							<dd>I am proficient in a unix command line from Basic Unix for Engineers, so much so that I decided to use Ubuntu as my primary OS on my personal laptop.</dd>
-							<dt>Python</dt>
-							<dd>When I took Basic Unix for Engineers in the spring of 2016, I learned how to use python to make system calls to read and write files, fork multiple processes at a time, and set up a simple server-client interaction, among other topics.</dd>
-							<dt>HTML/CSS/Bootstrap/jQuery</dt>
-							<dd>I gained a lot of experience using these components while constructing this website.</dd>
-						</dl>
-					</div>
-				</div>
-		</div>
-	</div>
-
-	<div id="extracurriculars" class="blue">
+	<div id="extracurriculars" class="green">
 			<div class="container">
 				<div class="row">
 					<h3 class="text-center">Extracurricular Activities</h3>
@@ -121,14 +95,87 @@
 						<img class="extras-pic" id="baseball" src="./pics/baseball.jpg">
 					</div>
 					<div class="col-md-4">
-						<p>One of the things I am most passionate about is sports. As I said before I played baseball and basketball in high school, but I enjoy many other sports like football and hockey as well. I play intramural baseball and basketball. Our team won the intramural championship this past year for baseball. i also played in the Bookstore Basketball tournament at Notre Dame in the spring of 2016. Bookstore basketball is the world's largest outdoor 5 on 5 basketball tournament. Our team finished second out of around 600 teams.</p>
+						<p>One of the things I am most passionate about is sports. As I said before I played baseball and basketball in high school, but I enjoy many other sports like football and hockey as well. I play intramural baseball and basketball. Our team won the intramural championship this past year for baseball. I also played in the Bookstore Basketball tournament at Notre Dame in the spring of 2016. Bookstore basketball is the world's largest outdoor 5 on 5 basketball tournament. Our team finished second out of around 600 teams. I also enjoy watching movies and tv shows like Game of Thrones and Silicon Valley, which are two of my favorite shows right now.</p>
 					</div>
 				</div>
 			</div>
 	</div>
 
+	<div id="skills" class="blue">
+		<div class="container">
+			<div class="row">
+				<h3>Skills</h3>
+			</div>
+				<div class="row page-link">
+					<div class="col-md-6 skills">
+						<p><u>Listed below are skills that I have gained through classwork and projects in school:</u></p>
+						<dl>
+							<dt>C</dt>
+							<dd>I took Fundamentals of Computing 1 in the fall of 2015, where I learned how to use the C programming language, which I used to make Donkey Kong.</dd>
+							<dt>C++</dt>
+							<dd>I learned C++ by taking Fundamentals of Computing 2 in the spring of 2016. I learned how to deal with STL containers such as vectors, sets, and maps, as well as how to use inheritance and composition to my benefit. I used C++ to write the Stock Trading Algorithm program.</dd>
+							<dt>Unix</dt>
+							<dd>I am proficient in a unix command line from Basic Unix for Engineers, so much so that I decided to use Ubuntu as my primary OS on my personal laptop.</dd>
+							<dt>Python</dt>
+							<dd>When I took Basic Unix for Engineers in the spring of 2016, I learned how to use python to make system calls to read and write files, fork multiple processes at a time, and set up a simple server-client interaction, among other topics.</dd>
+							<dt>HTML/CSS/Bootstrap/jQuery</dt>
+							<dd>I gained a lot of experience using these components while constructing this website.</dd>
+						</dl>
+					</div>
+					<div class="col-md-6">
+						<img src="./pics/python.png" class="skills-pic">
+						<img src="./pics/root.png" class="skills-pic">
+					</div>
+				</div>
+				<div class="row">
+				<p>
+					<a href="#" class="btn-primary" role="button" data-toggle="modal" data-target="#courseModal">Learn More about my courses</a>
+				</p>
+				</div>
+		</div>
+	</div>
 
-		<div class="container-fluid gray" id="contact">
+	<div id="projects" class="green">
+		<div class="container">
+			<div class="row">
+				<h3 class="text-center">Projects</h3>
+			</div>
+			<div class="row">
+				<p>Below are a few of the projects I have completed since starting my curriculum at Notre Dame. I have other programs in my <a href="https://github.com/bradsherman/FundComp1/tree/master/donkeykong">Github</a>, which I hope help show my progess as a programmer.</p>
+			</div>
+			<div class="row page-link">
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img class="img-responsive project-img thumb2" src="./pics/donkeykong.png">
+						<div class="caption">
+							<h2>Donkey Kong</h2>
+							<p>I recreated the first level of the classic arcade game Donkey Kong with my knowledge of the C programming language, along with a basic graphis library made by the instructor.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img class="img-responsive project-img thumb2" src="./pics/big-stocks.jpg">
+						<div class="caption">
+							<h2>Algorithmic Stock Trader</h2>
+							<p>My group and I created a program using C++ that used the Yahoo finance API to buy and sell stocks based on the Mean Reversion Momentum algorithms for a certain amount of time.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img class="img-responsive project-img thumb2" id="unix" src="./pics/thor.jpg" swap="./pics/big-spiderman.jpg">
+						<div class="caption">
+							<h2>Simple Server/Client Interaction</h2>
+							<p>A partner and I used python to write an HTTP client named Thor that can make (hammer) mutliple requests, and an HTTP server named Spidey that supports directory listings, static files, and CGI scripts. (click to see Spidey)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class="container-fluid" id="contact">
 			<div class="row page-link">
 			<ul>
 				<li class="connect-btn" id="mail">

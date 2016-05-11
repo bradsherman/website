@@ -1,10 +1,8 @@
 img {
+	display: block;
 	position: relative;
 	max-width: 100%;
 	max-height: 100%;
-	display: block;
-	width: 100%;
-	height:auto;
 }
 
 .extras-pic {
@@ -38,6 +36,7 @@ dl {
 
 .header {
 	height:100%;
+	background: url(../pics/background.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -46,8 +45,7 @@ dl {
 }
 
 #intro {
-	background: url(../pics/background.jpg) no-repeat center center fixed; 
-	opacity: .75;
+	margin-top: 30px;
 }
 
 .gray {
@@ -104,11 +102,11 @@ p, div {
 }
 
 .green {
-	background-color: rgb(215, 255, 215);
+	background-color: rgb(245, 245, 245);
 }
 
 .blue {
-	background-color: rgb(215, 215, 255);
+	background-color: rgb(255, 255, 255);
 }
 
 #contact {
@@ -157,3 +155,32 @@ p, div {
 	background-color: #00cc66;
 }
 
+.btn {
+	vertical-align: bottom;
+	position: absolute;
+	right: 50%;
+	top: 150px;
+}
+
+.caption p a {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.projects {
+	float:left;	
+}
+
+.project-img {
+	max-width:350px;
+	max-height:290px;
+}
+
+a p div {
+	text-decoration: none;
+}
+
+.skills-pic {
+	max-width: 500px;
+	max-height: 250px;
+}
