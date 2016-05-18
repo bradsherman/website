@@ -20,6 +20,7 @@ $(document).ready(function() {
 
 		});
 
+		// Function to make screen take navbar into account when scrolling to differenct sections
 		$(function() {
 			$('a[href*="#"]:not([href="#"])').click(function() {
 				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -34,42 +35,6 @@ $(document).ready(function() {
    			}
 			});
 		});
-		//This function makes the greyed out logos fade when hovered over
-		$('.connect-btn').hover(
-			function(){ 
-				$(this).css({
-					'-webkit-filter': 'grayscale(0%)',
-				});
-
-				var id = $(this).attr('id');
-				console.log('#'+id+'.text');
-
-				$('#'+id+'.text').css({
-					'display': 'block'
-				});
-
-				//for the copyright
-				$('#copyright').css({
-					'margin-top': '12px'
-				});
-			}, function(){ 
-				$(this).css({
-					'-webkit-filter': 'grayscale(100%)',
-				});
-
-				var id = $(this).attr('id');
-				console.log('#'+id+'.text');
-
-				$('#'+id+'.text').css({
-					'display': 'none'
-				});
-
-				//for the copyright
-				$('#copyright').css({
-					'margin-top': '100px'
-				});
-			}
-		);
 
 		//Switch between thor and spidey picture
 		$('#unix').click(function() {
@@ -79,4 +44,39 @@ $(document).ready(function() {
 			_this.attr('src',swap).attr('swap',current);
 		});
 
+		// Make navbar disappear while scrolling
+		
+		var lastScroll = 0;
+
+		$(window).scroll(function() {
+			var currentScroll = $(this).scrollTop();
+			if ( currentScroll < lastScroll ) {
+				$('.navbar').slideDown();
+			} else {
+				$('.navbar').slideUp();
+			}
+			lastScroll = currentScroll;
+		});
+
+
+	$(window).scroll(function() {
+  	if($(window).scrollTop() > $(document).height() - 900) {
+			$('#mail').fadeIn();
+			$('#github').fadeIn();
+			$('#linkedin').fadeIn();
+			$('#twitter').fadeIn();
+			$('#facebook').fadeIn();
+			$('#copyright').fadeIn();
+			$('.connect-btn').css({
+				'display': 'inline-block'
+			});
+		} else {
+			$('#mail').fadeOut();
+			$('#github').fadeOut();
+			$('#linkedin').fadeOut();
+			$('#twitter').fadeOut();
+			$('#facebook').fadeOut();
+			$('#copyright').fadeOut();
+		}
+	});
 });
