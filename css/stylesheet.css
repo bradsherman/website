@@ -6,6 +6,7 @@ img {
 }
 
 .extras-pic {
+	padding: 10px;
 	position: relative;
 	max-width: 85%;
 	max-height: 85%;
@@ -21,6 +22,7 @@ dl {
 	font-size: 20px;
 	text-align: left;
 }
+
 .nav-elements {
 	font-size: 15px;
 }
@@ -45,7 +47,7 @@ dl {
 }
 
 #intro {
-	margin-top: 30px;
+	-webkit-filter: grayscale(75%);
 }
 
 .gray {
@@ -53,7 +55,7 @@ dl {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Oswald';
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -72,12 +74,12 @@ p, div {
 	font-family: 'Oswald', arial, sans-serif;
 	font-weight:bold;
 	font-size: 30px;
-	color: rgb(255,255,255);
+	color: rgb(0,0,0);
 	width:70%;
 	text-align: center;
 	margin: auto;
 	position: absolute;
-	top: 50%;
+	top: 20%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
@@ -106,7 +108,7 @@ p, div {
 }
 
 .blue {
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(255,255,255);
 }
 
 #contact {

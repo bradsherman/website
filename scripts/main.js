@@ -50,10 +50,10 @@ $(document).ready(function() {
 
 		$(window).scroll(function() {
 			var currentScroll = $(this).scrollTop();
-			if ( currentScroll < lastScroll ) {
-				$('.navbar').slideDown();
-			} else {
-				$('.navbar').slideUp();
+			if ( currentScroll < lastScroll - 5) {
+				$('.navbar').fadeIn('fast');
+			} else if ( currentScroll > lastScroll + 5) {
+				$('.navbar').fadeOut('fast');
 			}
 			lastScroll = currentScroll;
 		});
