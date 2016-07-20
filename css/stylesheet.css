@@ -12,6 +12,7 @@ img {
 	max-height: 85%;
 	width: auto;
 	height:auto;
+	left: -1500px;
 }
 
 p {
@@ -98,7 +99,7 @@ p, div {
 #about-me-pic {
 	padding-bottom: 30px;
 }
-	
+
 .skills {
 	text-align: left;
 }

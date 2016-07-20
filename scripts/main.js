@@ -37,11 +37,15 @@ $(document).ready(function() {
 		});
 
 		//Switch between thor and spidey picture
+		var imgName = ["./pics/thor.jpg","./pics/big-spiderman.jpg"];
+		var index = 1;
 		$('#unix').click(function() {
-			var _this = $(this);
-			var current = _this.attr('src');
-			var swap = _this.attr('swap');
-			_this.attr('src',swap).attr('swap',current);
+			$("#unix").fadeOut(300, function() {
+				$("#unix").attr("src", imgName[index]);
+				index++;
+				if (index > 1) {index = 0;}
+				$("#unix").fadeIn(300);
+			});
 		});
 
 		// Make navbar disappear while scrolling
@@ -60,7 +64,8 @@ $(document).ready(function() {
 
 
 	$(window).scroll(function() {
-  	if($(window).scrollTop() > $(document).height() - 900) {
+		// 636 window height
+		if($(window).scrollTop() > $(document).height() - 1000) {
 			$('#mail').fadeIn();
 			$('#github').fadeIn();
 			$('#linkedin').fadeIn();
@@ -70,7 +75,12 @@ $(document).ready(function() {
 			$('.connect-btn').css({
 				'display': 'inline-block'
 			});
+		} else if($(window).scrollTop() > $("#intro").height() + $("#about-me").height() - 200) {
+			$(".extras-pic").animate({left: "0px"},500);
+		} else if($(window).scrollTop() > $("#intro").height() - 400) {
+			$("#about-me-pic").fadeIn(1000);
 		} else {
+			$("#about-me-pic").fadeOut();
 			$('#mail').fadeOut();
 			$('#github').fadeOut();
 			$('#linkedin').fadeOut();
@@ -79,4 +89,5 @@ $(document).ready(function() {
 			$('#copyright').fadeOut();
 		}
 	});
+	
 });
