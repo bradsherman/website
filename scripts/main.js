@@ -63,7 +63,7 @@ $(document).ready(function() {
 		});
 
 
-	$(window).scroll(function() {
+		$(window).scroll(function() {
 		// 636 window height
 		if($(window).scrollTop() > $(document).height() - 1000) {
 			$('#mail').fadeIn();
@@ -75,9 +75,7 @@ $(document).ready(function() {
 			$('.connect-btn').css({
 				'display': 'inline-block'
 			});
-		} else if($(window).scrollTop() > $("#intro").height() + $("#about-me").height() - 200) {
-			$(".extras-pic").animate({left: "0px"},500);
-		} else if($(window).scrollTop() > $("#intro").height() - 400) {
+		} else if($(window).scrollTop() > $("#intro").height() - 700) {
 			$("#about-me-pic").fadeIn(1000);
 		} else {
 			$("#about-me-pic").fadeOut();
