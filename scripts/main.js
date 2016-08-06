@@ -65,7 +65,9 @@ $(document).ready(function() {
 
 		$(window).scroll(function() {
 		// 636 window height
-		if($(window).scrollTop() > $(document).height() - 1000) {
+		if($(window).scrollTop() > $(document).height() - $("#projects").height() - $("#contact").height() - 300) {
+// 		    alert("Document height = " + $(document).height());
+// 		    alert("Window height   = " + $(window).height());
 			$('#mail').fadeIn();
 			$('#github').fadeIn();
 			$('#linkedin').fadeIn();
